@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp">
+
+    <!--
+        TODO 02: Adicione TextViews para mostrar first_name, last_name, email e phone dos contatos
+        EXTRA: Uma boa formatação dos campos consederá ponto extra. -->
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10px"
+        android:textColor="#890"
+        android:textStyle="italic"
+        android:id="@+id/firstName">
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10px"
+        app:layout_constraintTop_toBottomOf="@+id/firstName"
+        android:textColor="#890"
+        android:textStyle="italic"
+        android:id="@+id/lastName">
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10px"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"
+        android:textColor="#623"
+        android:textStyle="bold"
+        android:id="@+id/email">
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10px"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:textColor="#378"
+        android:textStyle="bold"
+        android:id="@+id/phone">
+    </TextView>
+
+</android.support.constraint.ConstraintLayout>

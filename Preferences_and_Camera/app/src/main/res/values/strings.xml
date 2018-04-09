@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Camera-Example</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="user_name">User Name</string>
+    <string name="take_picture">Take Picture</string>
+</resources>

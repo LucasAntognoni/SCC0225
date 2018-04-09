@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exemple.android.crud_exercicio.ContactDetailActivity"
+    android:fitsSystemWindows="true">
+
+
+    EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="First Name"
+    android:enabled="false"
+    android:id="@+id/txtFirstName"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:enabled="false"
+        android:id="@+id/txtLastName"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Email"
+        android:id="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Phone"
+        android:id="@+id/txtPhone"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        tools:layout_editor_absoluteX="8dp"
+        android:inputType="phone"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Delete Contact"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:onClick="onClickBtnDelete" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEdit"
+        app:layout_constraintBottom_toTopOf="@id/btnDelete"
+        android:text="Edit Contact"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:onClick="onClickBtnEdit"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Cancel"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:onClick="onClickBtnCancel" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        app:layout_constraintBottom_toTopOf="@id/btnCancel"
+        android:text="Save"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:onClick="onClickbtnSave"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSendEmail"
+        app:layout_constraintBottom_toTopOf="@id/btnEdit"
+        android:text="Call"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:onClick="onClickBtnCall"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCall"
+        app:layout_constraintBottom_toTopOf="@id/btnSendEmail"
+        android:text="Send Email"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:onClick="onClickBtnSendEmail"
+        android:layout_marginBottom="10dp"/>
+
+</android.support.constraint.ConstraintLayout>
